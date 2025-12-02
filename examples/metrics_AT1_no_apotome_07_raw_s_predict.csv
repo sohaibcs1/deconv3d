@@ -1,0 +1,2 @@
+run,in_nii,gt_nii,base_ch,win,roi,overlap,MAE,RMSE,PSNR,SSIM,EdgeSSIM,NCC,params,infer_sec,ckpt_used
+run,/home/msohaib/reconstruct_sec/test/AT1_no_apotome_07_raw_sec.nii.gz,/home/msohaib/reconstruct_sec/test/AT1_no_apotome_07_processed_sec.nii.gz,24,4,64,0.5,0.0145342,0.0417198,28.0132,0.840195,0.8887204,0.9131768,2531905,49.918,runs/safe_run_alpha1/best_3d_deconv.pt
