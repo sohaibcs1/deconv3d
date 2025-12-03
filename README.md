@@ -8,7 +8,7 @@ mDeconv3D is a lightweight 3D deconvolution model that restores blurred and nois
 ------------------------------------------------------------------------
 
 ## 📁 **Repository Structure**
-
+```
 deconv3d/
 ├── README.md
 ├── requirements.txt
@@ -17,7 +17,7 @@ deconv3d/
 │   └── model.png
 ├── model/
 │   ├── main.py          # training & inference CLI (train / infer)
-│   └── model.py         # Deconv3D (TinyUNETR3D) architecture + loss & metrics
+│   └── model.py         
 ├── checkpoints/
 │   ├── 3d_deconv.pt
 │   ├── dapi/
@@ -27,14 +27,15 @@ deconv3d/
 │   └── dapi_polarity/
 │       └── best_3d_deconv.pt
 ├── data/
-│   ├── pairs_example.csv        # example raw/gt pair list
-│   └── ...                      # your own NIfTI volumes & pair files
+│   ├── pairs_example.csv
+│   └── ...
 ├── examples/
 │   ├── metrics_AT1_no_apotome_07_raw_predict.csv
 │   └── metrics_AT1_no_apotome_07_raw_s_predict.csv
 └── notebooks/
     ├── npari_randring.ipynb
     └── vis_nii_color.ipynb
+```
 
 ------------------------------------------------------------------------
 
