@@ -1,23 +1,10 @@
 # **Deconv3D: Transformer-Based 3D Deconvolution for Microscopy Volumes**
 
-Deconv3D is a lightweight Transformer‑based 3D deconvolution framework
-designed to restore microscopy volumes affected by blur, noise, and
-depth‑dependent degradation.\
-It integrates a **Conv--Transformer encoder**, **windowed 3D
-self‑attention blocks**, and a **skip‑connected decoder**, enabling both
-**local feature refinement** and **global context modeling**.
+mDeconv3D is a lightweight 3D deconvolution model that restores blurred and noisy microscopy volumes by combining local feature extraction from 3D convolutions with global context modeling from windowed 3D self-attention. A Conv–Transformer encoder captures multiscale representations, while a skip-connected decoder refines and upsamples them to produce a clean, high-fidelity volume.
+
+![architecture of model](./assets/model.png)
 
 
-
-------------------------------------------------------------------------
-
-##  **Key Features**
-
--   3D Conv--Transformer hybrid architecture
--   Windowed 3D Swin‑style attention
--   Joint **L1 + SSIM loss** for structural preservation
--   Patch‑based training with overlapping inference
--   Full evaluation suite (PSNR / SSIM / EdgeSSIM /NCC / MAE / RMSE)
 ------------------------------------------------------------------------
 
 ## 📁 **Repository Structure**
@@ -123,50 +110,15 @@ CUDA_VISIBLE_DEVICES=4 python deconv3d_train_infer.py infer \
   --roi 64 --overlap 0.5 --base_ch 24 --win 4 --pad_win --no_amp
 
 ```
+
 Outputs: - Restored 3D volume
-------------------------------------------------------------------------
-
-## **Metrics**
-
-The model reports:
-
--   **MAE (Mean Absolute Error)**
--   **RMSE (Root Mean Square Error)**
--   **PSNR (Peak Signal‑to‑Noise Ratio)**
--   **SSIM (Structural Similarity Index)**
--   **EdgeSSIM (SSIM on Sobel edges)**
--   **NCC (Normalized Cross‑Correlation)**
 
 ------------------------------------------------------------------------
 
-## **Classical RL Baseline**
-
-``` bash
-python rl_deconv3d/rl_deconv3d.py \
-  --pairs data/pairs.csv \
-  --psf_gauss_sigma 2.2 1.2 1.2 \
-  --psf_size 21 21 21 \
-  --iters 8 \
-  --damp 0.3 \
-  --out_dir preds_rl \
-  --metrics_csv results/rl_metrics.csv \
-  --run_label RL
-```
-
 ------------------------------------------------------------------------
+##  **Example**
 
-## **CARE‑3D Baseline**
 
-``` bash
-python care3d/care3d.py --mode train \
-  --csv data/pairs.csv \
-  --epochs 30 \
-  --patch_d 32 --patch_h 64 --patch_w 64 \
-  --num_channels 32 \
-  --out_dir runs/care3d
-```
-
-------------------------------------------------------------------------
 
 ## **Citation**
 
