@@ -112,7 +112,7 @@ Outputs: - Restored 3D volume
 
 
 ``` bash
-CUDA_VISIBLE_DEVICES=4 python deconv3d_train_infer.py infer \
+python deconv3d_train_infer.py infer \
   --weights runs/.../best_3d_deconv.pt \
   --in_nii  /home/msohaib/.../mcf10a.nii.gz \
   --out_dir /home/msohaib/.../preds \
