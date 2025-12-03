@@ -118,6 +118,8 @@ Outputs: - Restored 3D volume
 ------------------------------------------------------------------------
 ##  **Example**
 
+The figure compares Deconv3D performance across microscopy systems with varying optical quality. Zeiss Oil (left) represents high-resolution imaging, while Zeiss Water and Evos FL90 (middle and right) are lower-resolution modalities. In all cases, Deconv3D restores fine structural details, enhances contrast, and reduces blur—demonstrating strong robustness and generalization across high and low-resolution microscopy setups.
+
 ![model results](./assets/example.png)
 
 
