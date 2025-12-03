@@ -118,6 +118,7 @@ Outputs: - Restored 3D volume
 ------------------------------------------------------------------------
 ##  **Example**
 
+![model results](./assets/example.png)
 
 
 ## **Citation**
