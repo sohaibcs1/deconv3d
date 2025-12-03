@@ -9,24 +9,32 @@ mDeconv3D is a lightweight 3D deconvolution model that restores blurred and nois
 
 ## 📁 **Repository Structure**
 
-    Deconv3D/
-    │── deconv3d_train_infer.py      # Main training & inference script
-    │── rl_deconv3d/
-    │     └── rl_deconv3d.py         # Classical RL 3D deconvolution baseline
-    │── care3d/
-    │     └── care3d.py              # CARE‑3D baseline (CSBDeep)
-    │── utils/
-    │     ├── metrics.py             # PSNR, SSIM, EdgeSSIM, NCC
-    │     ├── io_utils.py            # Loading, normalization, saving volumes
-    │     └── sliding_window.py      # Patch‑based inference
-    │── data/
-    │     └── pairs.csv              # Raw ↔ GT volume mapping
-    │── runs/
-    │     └── model_outputs/         # Training logs, checkpoints, results
-    │── results/
-    │     ├── metrics.csv            # Evaluation metrics
-    │     └── figures/               # Model visualizations
-    │── README.md
+deconv3d/
+├── README.md
+├── requirements.txt
+├── assets/
+│   ├── example.png
+│   └── model.png
+├── model/
+│   ├── main.py          # training & inference CLI (train / infer)
+│   └── model.py         # Deconv3D (TinyUNETR3D) architecture + loss & metrics
+├── checkpoints/
+│   ├── 3d_deconv.pt
+│   ├── dapi/
+│   │   └── best_3d_deconv.pt
+│   ├── polarity/
+│   │   └── best_3d_deconv.pt
+│   └── dapi_polarity/
+│       └── best_3d_deconv.pt
+├── data/
+│   ├── pairs_example.csv        # example raw/gt pair list
+│   └── ...                      # your own NIfTI volumes & pair files
+├── examples/
+│   ├── metrics_AT1_no_apotome_07_raw_predict.csv
+│   └── metrics_AT1_no_apotome_07_raw_s_predict.csv
+└── notebooks/
+    ├── npari_randring.ipynb
+    └── vis_nii_color.ipynb
 
 ------------------------------------------------------------------------
 
