@@ -79,7 +79,6 @@ python deconv3d_train_infer.py train \
 
 ### Important Arguments
 
-  Argument       Meaning
   -------------- -------------------------------------------------------
   `patch`        Training patch size (D=H=W)
   `ppv`          Patches-per-volume (sampling density)
