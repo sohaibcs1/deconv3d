@@ -96,9 +96,9 @@ python deconv3d_train_infer.py train \
 
 ``` bash
 python deconv3d_train_infer.py infer \
-  --weights runs/safe_run_24ch_p64_sec/best_3d_deconv.pt \
-  --in_nii  /home/msohaib/reconstruct_3d/jusuff_test/high/s/MCF7_19_no_apotome_raw_s.nii.gz \
-  --gt_nii  /home/msohaib/reconstruct_3d/jusuff_test/high/s/MCF7_19_no_apotome_processed_s.nii.gz \
+  --weights runs/.../best_3d_deconv.pt \
+  --in_nii  /home/msohaib/.../MCF7_raw.nii.gz \
+  --gt_nii  /home/msohaib/.../MCF7_processed.nii.gz \
   --out_dir preds_final_low \
   --roi 64 --overlap 0.5 --base_ch 24 --win 4 --pad_win \
   --metrics_csv preds_final_water/metrics_mcf7.csv
@@ -113,9 +113,9 @@ Outputs: - Restored 3D volume
 
 ``` bash
 CUDA_VISIBLE_DEVICES=4 python deconv3d_train_infer.py infer \
-  --weights runs/safe_run_alpha1/best_3d_deconv.pt \
-  --in_nii  /home/msohaib/reconstruct_3d/jusuff_test/low_evos/new/mcf10a_F.nii.gz \
-  --out_dir /home/msohaib/reconstruct_3d/jusuff_test/low_evos/preds \
+  --weights runs/.../best_3d_deconv.pt \
+  --in_nii  /home/msohaib/.../mcf10a.nii.gz \
+  --out_dir /home/msohaib/.../preds \
   --roi 64 --overlap 0.5 --base_ch 24 --win 4 --pad_win --no_amp
 
 ```
