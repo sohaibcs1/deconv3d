@@ -131,7 +131,7 @@ The figure compares Deconv3D performance across microscopy systems with varying 
 ![model results](./assets/example.png)
 
 
-## **Citation**
+<!-- ## **Citation**
 
 If you use Deconv3D, please cite:
 
@@ -139,7 +139,7 @@ If you use Deconv3D, please cite:
       title={Deconv3D: A Transformer-Based Framework for 3D Microscopy Image Deconvolution},
       author={Muhammad Sohaib et al.},
       year={2026}
-    }
+    } -->
 
 ------------------------------------------------------------------------
 
