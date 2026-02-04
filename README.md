@@ -39,7 +39,7 @@ deconv3d/
 
 ------------------------------------------------------------------------
 
-## 📦 **Installation**
+## **Installation**
 
 ``` bash
 git clone https://github.com/sohaibcs1/deconv3d.git
@@ -89,7 +89,7 @@ python deconv3d_train_infer.py train \
 
 ------------------------------------------------------------------------
 
-## 🔍 **Inference (Predict Full 3D Volume)**
+## **Inference (Predict Full 3D Volume)**
 
 
 
@@ -149,5 +149,5 @@ For questions or collaborations:
 
 **Muhammad Sohaib**\
 University of Nevada, Reno\
-📩 msohaib.bio@gmail.com\
-🌐 https://github.com/sohaibcs1/
+ msohaib.bio@gmail.com\
+ https://github.com/sohaibcs1/
