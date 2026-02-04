@@ -1,11 +1,10 @@
 # **Deconv3D: Transformer-Based 3D Deconvolution for Microscopy Volumes**
 
-Deconv3D is a lightweight 3D deconvolution model that restores blurred and noisy microscopy volumes by combining local feature extraction from 3D convolutions with global context modeling from windowed 3D self-attention. A Conv–Transformer encoder captures multiscale representations, while a skip-connected decoder refines and upsamples them to produce a clean, high-fidelity volume.
+**Live Demo:** https://www.engr.unr.edu/deconv3d/
 
-![architecture of model](./assets/model.png)
-# **Live Website**
+Deconv3D is a lightweight Transformer-based framework for restoring blurred and noisy 3D microscopy volumes. The model integrates local feature extraction via 3D convolutions with global context modeling through windowed 3D self-attention. A hybrid Conv–Transformer encoder captures multi-scale representations, while a skip-connected decoder progressively refines and upsamples features to reconstruct high-fidelity volumetric outputs.
 
-https://www.engr.unr.edu/deconv3d/
+![Architecture of Deconv3D](./assets/model.png)
 ------------------------------------------------------------------------
 
 ## 📁 **Repository Structure**
