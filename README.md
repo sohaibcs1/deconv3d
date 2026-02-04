@@ -2,7 +2,7 @@
 
 Deconv3D is a lightweight 3D deconvolution model that restores blurred and noisy microscopy volumes by combining local feature extraction from 3D convolutions with global context modeling from windowed 3D self-attention. A Conv–Transformer encoder captures multiscale representations, while a skip-connected decoder refines and upsamples them to produce a clean, high-fidelity volume.
 
-<!-- ![architecture of model](./assets/model.png) -->
+![architecture of model](./assets/model.png)
 # **Live Website**
 
 https://www.engr.unr.edu/deconv3d/
@@ -125,11 +125,11 @@ Outputs: - Restored 3D volume
 ------------------------------------------------------------------------
 
 ------------------------------------------------------------------------
-<!-- ##  **Example**
+##  **Example**
 
-The figure compares Deconv3D performance across microscopy systems with varying optical quality. Zeiss Oil (left) represents high-resolution imaging, while Zeiss Water and Evos FL90 (middle and right) are lower-resolution modalities. In all cases, Deconv3D restores fine structural details, enhances contrast, and reduces blur—demonstrating strong robustness and generalization across high and low-resolution microscopy setups.
+Qualitative cross-microscope deconvolution results showing DAPI (top) and filamentous markers (bottom) from Zeiss-1, Zeiss-2, and Olympus. Raw inputs (left) and restored outputs (right) illustrate effective blur suppression, removal of out-of-focus light, and strong cross-platform generalization.
 
-![model results](./assets/example.png) -->
+![model results](./assets/example.png)
 
 
 <!-- ## **Citation**
