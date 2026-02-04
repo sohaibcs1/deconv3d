@@ -7,7 +7,7 @@ Deconv3D is a lightweight Conv–Transformer model that combines 3D convolutions
 ![Architecture of Deconv3D](./assets/model.png)
 ------------------------------------------------------------------------
 
-## 📁 **Repository Structure**
+## **Repository Structure**
 ```
 deconv3d/
 ├── README.md
