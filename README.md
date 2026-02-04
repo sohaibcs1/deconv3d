@@ -143,6 +143,11 @@ If you use Deconv3D, please cite:
 
 ------------------------------------------------------------------------
 
+## Funding
+
+This work was supported in part by the National Institutes of Health (NIH).
+
+
 ## **Contact**
 
 For questions or collaborations:
