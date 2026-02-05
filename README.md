@@ -126,7 +126,7 @@ Outputs: - Restored 3D volume
 ------------------------------------------------------------------------
 ##  **Example**
 
-Qualitative cross-microscope deconvolution results showing DAPI (top) and filamentous markers (bottom) from Zeiss-1, Zeiss-2, and Olympus. Raw inputs (left) and restored outputs (right) illustrate effective blur suppression, removal of out-of-focus light, and strong cross-platform generalization.
+Qualitative cross-microscope deconvolution results showing DAPI (top) and B-catenin markers (bottom) from Zeiss-1, Zeiss-2, and Olympus. Raw inputs (left) and restored outputs (right) illustrate effective blur suppression, removal of out-of-focus light, and strong cross-platform generalization.
 
 ![model results](./assets/example.png)
 
